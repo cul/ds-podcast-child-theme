@@ -1,0 +1,23 @@
+/*
+ Theme Name:   Checathlon child theme
+ Description:  Checathlon Child Theme for Columbia University Library Podcasts
+ Template:     checathlon
+ Text Domain:  checathlonchild
+*/
+
+/* adjust footer widget size */
+
+#footer-area-1,
+#footer-area-2 {
+  width: 50%;
+}
+
+/* modify page-header font to match body */
+
+.title-font,
+.page-title,
+.after-content-widget-area .widget:first-of-type .widget-title,
+.front-page-widget-area .widget:first-of-type .widget-title,
+blockquote {
+	font-family: "Source Sans Pro", serif;
+}
