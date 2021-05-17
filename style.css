@@ -21,3 +21,9 @@
 blockquote {
 	font-family: "Source Sans Pro", serif;
 }
+
+/* colophon link color */
+
+#colophon a {
+  color: #fff;
+}
