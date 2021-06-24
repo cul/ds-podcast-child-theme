@@ -8,4 +8,4 @@ This is a WordPress child theme for the Checathlon theme. Designed specifically 
 - **archive-podcast.php** — changes page title to "Episodes" (instead of "Podcasts") for this custom post type archive page only. The custom post type is created by the Seriously Simple Podcasts plugin.
 - **footer.php** — replaces colophon with hard link to the podcast multisite homepage
 - **functions.php** — registers child theme and adds custom color picker for link colors
-- **style.css** — changes page title font to match body text font, modifies layout for footer widget area
+- **style.css** — changes page title font to match body text font, modifies layout for footer widget area, hide svg icon from widget area

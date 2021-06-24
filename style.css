@@ -27,3 +27,9 @@ blockquote {
 #colophon a {
   color: #fff;
 }
+
+/* hide paintbrush icon from widget area */
+
+.widget-area svg {
+  display: none;
+}
