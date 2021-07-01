@@ -33,3 +33,24 @@ blockquote {
 .widget-area svg {
   display: none;
 }
+
+/* smaller article tiles for blog feed */
+
+@media screen and (min-width: 62.875em) {
+
+  .blog-wrapper .entry-header-bg {
+    width: 200px;
+  }
+
+  .blog-wrapper .entry-inner {
+    font-size: 1rem;
+    min-height: 250px;
+    padding: 1.5rem;
+  }
+}
+
+/* hide featured image from podcast post pages */
+
+.entry-inner-singular .entry-media img {
+  display: none;
+}
