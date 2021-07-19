@@ -44,13 +44,46 @@ blockquote {
 
   .blog-wrapper .entry-inner {
     font-size: 1rem;
-    min-height: 250px;
+    min-height: 200px;
     padding: 1.5rem;
   }
 }
 
+/* light gray background for blog feed tiles */
+
+.blog-wrapper .entry-inner,
+.search-results .entry-inner,
+.mb-wrapper .hentry,
+.mb-form-topic,
+.grid-wrapper .entry-inner-wrapper,
+.entry-login-form {
+	background-color: #f0f0f0;
+}
+
 /* hide featured image from podcast post pages */
 
-.entry-inner-singular .entry-media img {
+.entry-inner-singular .entry-media {
   display: none;
+}
+
+/* adjust padding after entry titles on post pages */
+
+@media screen and (min-width: 62.875em) {
+  .entry-inner-singular .page-header {
+    padding-bottom: 1.5rem;
+  }
+}
+
+/* limit text excerpts to 3 lines. Using CSS here instead of native WordPress features because we need to include text in the WP Admin's Excerpt field in order to populate iTunes description fields (using post content would add too much to iTunes description). Using the Excerpt field overrides character limits on excerpts */
+
+.entry-summary p {
+  display: none;
+}
+
+.entry-summary p:first-child {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
